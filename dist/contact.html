@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Me | Frontend Developer & UI/UX Designer</title>
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="https://kit.fontawesome.com/e2f8b34b68.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header-inner" class="overlay overlay-1">
+      <div class="container">
+        <nav id="main-nav">
+          <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" id="logo" /></a>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <!-- Section A: Contact form -->
+    <section id="contact-a" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">Here is how you can reach me</p>
+
+            <!-- Usign Web3Forms -->
+            <!-- <form action="https://api.web3forms.com/submit" method="POST" id="form" class="callback-form">
+              <input type="hidden" name="access_key" value="543e2393-97f5-40bb-9656-bb3c1ba334f4" />
+              <input type="hidden" name="subject" value="New Submission from Portofolio Website" />
+              <input type="checkbox" name="botcheck" style="display: none" />
+
+              <div class="text-fields">
+                  <input type="text" name="name" id="name" class="text-input name-input" placeholder="Full Name">    
+                  <input type="text" name="subject" id="subject" class="text-input subject-input" placeholder="Subject">    
+                  <input type="email" name="email" id="email" class="text-input email-input" placeholder="Email Address">    
+                  <input type="text" name="phone" id="phone" class="text-input phone-input" placeholder="Phone Number">    
+                  <textarea name="message" id="message" class="text-input message-input" placeholder="Enter Message"></textarea>
+              </div>
+
+              <p id="result" class="text-gray"></p>
+
+              <button type="submit" id="submit" class="btn-dark">Submit</button>
+            </form> -->
+
+            <!-- Usign Netlify Forms -->
+            <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+              <div class="text-fields">
+                  <input type="text" name="name" class="text-input name-input" placeholder="Full Name">    
+                  <input type="text" name="subject" class="text-input subject-input" placeholder="Subject">    
+                  <input type="email" name="email" class="text-input email-input" placeholder="Email Address">    
+                  <input type="text" name="phone" class="text-input phone-input" placeholder="Phone Number">    
+                  <textarea name="message" class="text-input message-input" placeholder="Enter Message"></textarea>
+              
+                  <div class="recaptcha">
+                    <div data-netlify-recaptcha="true"></div>
+                  </div>
+                </div>
+
+              <button type="submit" id="submit" class="btn-dark">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Section B: Contact info -->
+    <section id="contact-b" class="py-3 bg-dark">
+        <div class="container">
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <h3>Email</h3>
+                    <p>iuliauntesu98@gmail.com</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-phone fa-2x"></i>
+                    <h3>Phone</h3>
+                    <p>0764 473 197</p>
+                </div>
+
+                <div>
+                    <i class="fas fa-address-card fa-2x"></i>
+                    <h3>Address</h3>
+                    <p>Str. Semenic 1, Bucharest</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section C: Tagline -->
+    <section id="contact-c" class="bg-main text-center py-2">
+        <div class="container">
+            <h1>Let's start you next project!</h1>
+        </div>
+    </section>
+ 
+    <!-- Footer -->
+    <footer id="main-footer" class="marginless-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2023. All rights reserved.</p>
+
+        <div class="social">
+          <a href="https://www.facebook.com/iulia.toghie"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/iulia.untesu/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/iulia-unte%C8%99u-777524176/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Using Web3Forms -->
+    <!-- <script src="js/form.js"></script> -->
+  </body>
+</html>
